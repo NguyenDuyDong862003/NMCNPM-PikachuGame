@@ -1,0 +1,154 @@
+// 21130318_Nguyen_Duy_Dong_0395294348_DH21DTB
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  text-align: center;
+  background-color: pink;
+
+  h1 {
+    //text-align: center;
+    color: deeppink;
+  }
+
+  .containerGuide {
+    display: inline-block;
+    position: relative;
+
+    #btnGuide {
+
+    }
+
+    #popUpGuide {
+      width: 500px;
+      visibility: hidden;
+      //font-weight: bold;
+      border: 2px solid deeppink;
+      left: -150px;
+      //height: 500px;
+      position: absolute;
+      background-color: white;
+      z-index: 1000;
+
+      * {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: left;
+
+        li {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+      #btnCloseGuide {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #btnHint {
+    background-color: lightpink;
+    color: deeppink;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  #selectLevel {
+    width: 50px;
+    height: 20px;
+  }
+
+  #btnReset {
+    width: 50px;
+    height: 20px;
+  }
+
+  .boardContainer {
+    display: flex;
+    justify-content: center;
+
+    #board {
+      display: grid;
+      //grid-template-columns: repeat(3, 50px);
+      border: 2px deeppink solid;
+      position: relative;
+      //background-image: url("img/icon skin");
+
+      .cell {
+        //text-align: center;
+        //background-color: pink;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .line {
+        position: absolute;
+        //top: 10px;
+        //left: 10px;
+        background-color: deeppink;
+        border-radius: 5px;
+      }
+
+      .oval {
+        position: absolute;
+        //top: 10px;
+        //left: 10px;
+        background-color: deeppink;
+        border-radius: 100%;
+      }
+
+    }
+  }
+
+  .containerMyInfor {
+    display: inline-block;
+    position: relative;
+
+    #btnMyInfor {
+
+    }
+
+    #popUpMyInfor {
+      width: 300px;
+      visibility: hidden;
+      color: black;
+      font-weight: bold;
+      border: 2px solid deeppink;
+      //height: 500px;
+      position: absolute;
+      background-color: white;
+      z-index: 1000;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+      #btnClosePopUp {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+}
+

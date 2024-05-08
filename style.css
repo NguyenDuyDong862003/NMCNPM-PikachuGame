@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  text-align: center;
+  background-color: pink;
+}
+body h1 {
+  color: deeppink;
+}
+body .containerGuide {
+  display: inline-block;
+  position: relative;
+}
+body .containerGuide #popUpGuide {
+  width: 500px;
+  visibility: hidden;
+  border: 2px solid deeppink;
+  left: -150px;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+}
+body .containerGuide #popUpGuide * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+body .containerGuide #popUpGuide ul {
+  list-style-type: none;
+  text-align: left;
+}
+body .containerGuide #popUpGuide ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .containerGuide #popUpGuide #btnCloseGuide {
+  margin-bottom: 10px;
+}
+body #btnHint {
+  background-color: lightpink;
+  color: deeppink;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: white;
+}
+body #selectLevel {
+  width: 50px;
+  height: 20px;
+}
+body #btnReset {
+  width: 50px;
+  height: 20px;
+}
+body .boardContainer {
+  display: flex;
+  justify-content: center;
+}
+body .boardContainer #board {
+  display: grid;
+  border: 2px deeppink solid;
+  position: relative;
+}
+body .boardContainer #board .cell {
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+body .boardContainer #board .line {
+  position: absolute;
+  background-color: deeppink;
+  border-radius: 5px;
+}
+body .boardContainer #board .oval {
+  position: absolute;
+  background-color: deeppink;
+  border-radius: 100%;
+}
+body .containerMyInfor {
+  display: inline-block;
+  position: relative;
+}
+body .containerMyInfor #popUpMyInfor {
+  width: 300px;
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  border: 2px solid deeppink;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+}
+body .containerMyInfor #popUpMyInfor ul {
+  list-style-type: none;
+}
+body .containerMyInfor #popUpMyInfor ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .containerMyInfor #popUpMyInfor #btnClosePopUp {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

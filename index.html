@@ -1,0 +1,64 @@
+<!--21130318_Nguyen_Duy_Dong_0395294348_DH21DTB-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Pikachu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio controls loop autoplay>
+    <source src="Miras%20Day.mp3"
+            type="audio/mpeg">
+    Trình duyệt này ko hỗ trợ nhạc nhé!
+</audio>
+
+<h1>Pikachu game</h1>
+<div class="containerGuide">
+    <button id="btnGuide">Hướng dẫn chơi</button>
+    <div id="popUpGuide">
+        <ul>
+            <li>Bạn phải chọn 2 thẻ giống nhau và có đường nối giữa chúng để loại bỏ 2 thẻ đó ra khỏi bàn chơi. Nếu loại
+                bỏ được tất cả các thẻ thì sẽ chiến thắng.
+            </li>
+            <li>Đường nối giữa 2 thẻ không quá 3 cạnh thì mới được tính là hợp lệ.</li>
+            <li>Đặc trưng của từng level</li>
+            <li>Level 1: Có 8 loại thẻ khác nhau, mỗi loại thẻ có số lượng 16.</li>
+            <li>Level 2: Có 16 loại thẻ khác nhau, mỗi loại thẻ có số lượng 8.</li>
+            <li>Level 3: Có 32 loại thẻ khác nhau, mỗi loại thẻ có số lượng 4.</li>
+        </ul>
+        <button id="btnCloseGuide">Close</button>
+    </div>
+</div>
+<button id="btnHint">Gợi ý</button>
+<button id="btnReset">Reset</button>
+<label>Chọn level</label>
+<select id="selectLevel">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+<div class="containerMyInfor">
+    <button id="btnMyInfor">Giới thiệu thành viên</button>
+    <div id="popUpMyInfor">
+        <ul>
+            <li>Họ tên: Nguyễn Duy Đông</li>
+            <li>MSSV: 21130318</li>
+            <li>Họ tên: Nguyễn Thanh Triu</li>
+            <li>MSSV:</li>
+            <li>Họ tên: Nguyễn Thành Đạt</li>
+            <li>MSSV:</li>
+        </ul>
+        <button id="btnClosePopUp">Close</button>
+    </div>
+</div>
+<div class="boardContainer">
+    <div id="board">
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
