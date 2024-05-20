@@ -2,8 +2,6 @@ function main() {
     let model = new Model();
     let view = new ViewBanCo(model.row, model.col);
     let controller = new ControllerBanCo(model, view);
-
-    console.log(model);
 }
 
 main();
