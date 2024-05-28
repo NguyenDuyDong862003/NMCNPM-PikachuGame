@@ -268,6 +268,17 @@ class Model {
 
     get2CardCanConnect() {
         let listResult = [];
+        let board1d = this.convertMainBoard2dTo1d();
+        for (let i = 0; i < board1d.length - 1; i++) {
+            for (let j = i + 1; j < board1d.length; j++) {
+                let stackRoad = this.findRoadAmong2Card(board1d[i], board1d[j]);
+                if (stackRoad.length > 0) {
+                    listResult.push(board1d[i]);
+                    listResult.push(board1d[j]);
+                    return listResult;
+                }
+            }
+        }
         return listResult;
     }
 
