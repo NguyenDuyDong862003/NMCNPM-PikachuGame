@@ -1,4 +1,4 @@
-class Model {
++class Model {
     constructor() {
         this.position4CellAround = [
             [-1, 0, 1, 0],
@@ -266,8 +266,23 @@ class Model {
         return listResult;
     }
 
-    get2CardCanConnect() {
-        let listResult = [];
+    //UC2- 2
+    get2CardCanConnect() : any[]{
+        let listResult : any[] = [];
+        // UC2- 2.1
+        let board1d = this.convertMainBoard2dTo1d();
+        //UC2-2.2
+        for (let i = 0; i < board1d.length - 1; i++) {
+            for (let j = i + 1; j < board1d.length; j++) {
+                let stackRoad = this.findRoadAmong2Card(board1d[i], board1d[j]);
+                // UC2-2.3
+                if (stackRoad.length > 0) {
+                    listResult.push(board1d[i]);
+                    listResult.push(board1d[j]);
+                    return listResult;
+                }
+            }
+        }
         return listResult;
     }
 
